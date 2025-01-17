@@ -1,37 +1,51 @@
 #🎮 Color Link Game
 
-
-##📝 Description
+## 🖍 Description
 
 Color Link is an engaging puzzle game where players connect matching colored dots while following specific game rules. The game combines strategic thinking with visual problem-solving, offering a progressively challenging experience across 100 levels.
 
+---
 
-##✨ Features
-
-- **100 Progressive Levels**: Each level offers unique dot configurations
-- **Multiple Color Pairs**: 6-8 dots per level with various color combinations
-- **Intuitive Controls**: Touch and drag to create connections
-- **Smart Path Detection**: Prevents invalid moves and intersections
-- **Level Progress Tracking**: Saves your progress as you advance
-- **Responsive Design**: Adapts to different screen sizes
+## 📸 Screenshots
 
 
-##🎯 Game Rules
+1. Level Selection:
 
-1. Connect dots of the same color with continuous lines
+![Level Selection](screenshots/1.jpeg)
+![Level Selection](screenshots/2.jpeg)
+![Level Selection](screenshots/3.jpeg)
+
+---
+
+## ✨ Features
+
+- **100 Progressive Levels**: Each level offers unique dot configurations.
+- **Multiple Color Pairs**: 6-8 dots per level with various color combinations.
+- **Intuitive Controls**: Touch and drag to create connections.
+- **Smart Path Detection**: Prevents invalid moves and intersections.
+- **Level Progress Tracking**: Saves your progress as you advance.
+- **Responsive Design**: Adapts to different screen sizes.
+
+---
+
+## 🎯 Game Rules
+
+1. Connect dots of the same color with continuous lines.
 2. Lines cannot:
-   - Cross other lines
-   - Pass through other dots
-   - Connect different colors
-3. All dots must be connected to complete a level
-4. Players must draw the line (tapping dots directly is not allowed)
+   - Cross other lines.
+   - Pass through other dots.
+   - Connect different colors.
+3. All dots must be connected to complete a level.
+4. Players must draw the line (tapping dots directly is not allowed).
 
+---
 
-##🛠️ Technical Implementation
+## 🛠️ Technical Implementation
 
 ### Core Components
 
-```kotlin
+```
+kotlin
 GameView/
 ├── State Management
 │   ├── Grid System
@@ -46,19 +60,19 @@ GameView/
     └── Level Completion
 ```
 
-
 ### Key Classes
 
-- `GameView`: Main game canvas and logic handler
-- `LevelConfig`: Level configuration and dot placement
-- `Dot`: Individual dot properties and state
-- `Path`: Line drawing and path management
+- `GameView`: Main game canvas and logic handler.
+- `LevelConfig`: Level configuration and dot placement.
+- `Dot`: Individual dot properties and state.
+- `Path`: Line drawing and path management.
 
+---
 
 ## 🎨 Color Scheme
 
-| Color   | Usage                  |
-|---------|------------------------|
+| Color   | Usage                 |
+|---------|-----------------------|
 | Red     | Primary dot pair      |
 | Blue    | Secondary dot pair    |
 | Yellow  | Tertiary dot pair     |
@@ -66,6 +80,7 @@ GameView/
 | Magenta | Special dot pair      |
 | White   | Connection indicator  |
 
+---
 
 ## 🔄 Game Flow
 
@@ -83,43 +98,53 @@ graph TD
     G -->|No| B
 ```
 
+---
 
-##📱 Interface Components
+## 📱 Interface Components
 
-- Level indicator
-- Game board with dots
-- Connection paths
-- Visual feedback system
-- Level completion dialogs
+- Level indicator.
+- Game board with dots.
+- Connection paths.
+- Visual feedback system.
+- Level completion dialogs.
 
+---
 
-##🎮 Controls
+## 🎮 Controls
 
-1. **Touch**: Start at any unconnected dot
-2. **Drag**: Draw path to matching dot
-3. **Release**: Complete connection if valid
+1. **Touch**: Start at any unconnected dot.
+2. **Drag**: Draw path to matching dot.
+3. **Release**: Complete connection if valid.
 
+---
 
-##🔍 Validation System
+## 🔍 Validation System
 
 The game implements several validation checks:
-- Path intersection detection
-- Dot collision prevention
-- Color matching verification
-- Movement validation
+- Path intersection detection.
+- Dot collision prevention.
+- Color matching verification.
+- Movement validation.
 
+---
 
-##🌟 Future Enhancements
+## 🌟 Future Enhancements
 
-- [ ] Additional color themes
-- [ ] Sound effects and music
-- [ ] Achievement system
-- [ ] Time challenge mode
-- [ ] Custom level creator
+- [ ] Additional color themes.
+- [ ] Sound effects and music.
+- [ ] Achievement system.
+- [ ] Time challenge mode.
+- [ ] Custom level creator.
 
+---
 
-##🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-Built with ❤️ for puzzle game enthusiasts
+Built with ❤️ for puzzle game enthusiasts.
+
+
+
+
+
