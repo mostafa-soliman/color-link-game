@@ -1,0 +1,144 @@
+# 🎮 Color Link Game
+
+<br />
+
+## 📝 Description
+
+Color Link is an engaging puzzle game where players connect matching colored dots while following specific game rules. The game combines strategic thinking with visual problem-solving, offering a progressively challenging experience across 100 levels.
+
+<br />
+
+## ✨ Features
+
+- **100 Progressive Levels**: Each level offers unique dot configurations
+- **Multiple Color Pairs**: 6-8 dots per level with various color combinations
+- **Intuitive Controls**: Touch and drag to create connections
+- **Smart Path Detection**: Prevents invalid moves and intersections
+- **Level Progress Tracking**: Saves your progress as you advance
+- **Responsive Design**: Adapts to different screen sizes
+
+<br />
+
+## 🎯 Game Rules
+
+1. Connect dots of the same color with continuous lines
+2. Lines cannot:
+   - Cross other lines
+   - Pass through other dots
+   - Connect different colors
+3. All dots must be connected to complete a level
+4. Players must draw the line (tapping dots directly is not allowed)
+
+<br />
+
+## 🛠️ Technical Implementation
+
+### Core Components
+
+```kotlin
+GameView/
+├── State Management
+│   ├── Grid System
+│   ├── Path Tracking
+│   └── Level Progress
+├── Input Handling
+│   ├── Touch Events
+│   └── Path Drawing
+└── Validation Logic
+    ├── Intersection Detection
+    ├── Path Verification
+    └── Level Completion
+```
+
+<br />
+
+### Key Classes
+
+- `GameView`: Main game canvas and logic handler
+- `LevelConfig`: Level configuration and dot placement
+- `Dot`: Individual dot properties and state
+- `Path`: Line drawing and path management
+
+<br />
+
+## 🎨 Color Scheme
+
+| Color   | Usage                  |
+|---------|------------------------|
+| Red     | Primary dot pair      |
+| Blue    | Secondary dot pair    |
+| Yellow  | Tertiary dot pair     |
+| Green   | Additional dot pair   |
+| Magenta | Special dot pair      |
+| White   | Connection indicator  |
+
+<br />
+
+## 🔄 Game Flow
+
+```mermaid
+graph TD
+    A[Start Game] --> B[Load Level]
+    B --> C[Player Input]
+    C --> D{Valid Move?}
+    D -->|Yes| E[Update Path]
+    D -->|No| C
+    E --> F{Level Complete?}
+    F -->|Yes| G{All Levels Done?}
+    F -->|No| C
+    G -->|Yes| H[Game Complete]
+    G -->|No| B
+```
+
+<br />
+
+## 📱 Interface Components
+
+- Level indicator
+- Game board with dots
+- Connection paths
+- Visual feedback system
+- Level completion dialogs
+
+<br />
+
+## 🎮 Controls
+
+1. **Touch**: Start at any unconnected dot
+2. **Drag**: Draw path to matching dot
+3. **Release**: Complete connection if valid
+
+<br />
+
+## 🔍 Validation System
+
+The game implements several validation checks:
+- Path intersection detection
+- Dot collision prevention
+- Color matching verification
+- Movement validation
+
+<br />
+
+## 🌟 Future Enhancements
+
+- [ ] Additional color themes
+- [ ] Sound effects and music
+- [ ] Achievement system
+- [ ] Time challenge mode
+- [ ] Custom level creator
+
+<br />
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+<br />
+
+
+---
+
+<br />
+
+Built with ❤️ for puzzle game enthusiasts
